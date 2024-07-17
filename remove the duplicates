@@ -1,0 +1,28 @@
+#include<stdio.h>
+void main()
+{
+int arr[100],inloop;
+int noe;
+scanf("%d",&noe);
+
+for(int count=0;count<noe;count++)
+    scanf("%d",&arr[count]);
+
+
+    for(int start=0;start<noe-1;start++)
+{
+   for(int inloop=start+1;inloop<noe;inloop++)
+{
+
+if (arr[start]==arr[inloop])
+{
+for(int inloop1=inloop;inloop1<noe;inloop1++)
+arr[inloop1]=arr[inloop1+1];
+noe--;
+inloop--;
+}
+}
+}
+   for(int count=0;count<noe;count++)
+   printf("%d ",arr[count]);
+}
