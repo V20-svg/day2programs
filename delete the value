@@ -1,0 +1,16 @@
+#include<stdio.h>
+void main()
+{
+int arr[100];
+int noe;
+scanf("%d ",&noe);
+for(int count=0;count<noe;count++)
+    scanf("%d",&arr[count]);
+   int pos;
+   scanf("%d",&pos);
+    for(int count=pos-1;count<noe-1;count++)
+    arr[count]=arr[count+1];
+    noe--;
+    for(int count=0;count<noe;count++)
+   printf("%d ",arr[count]);
+}
