@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main()
+{
+    int noe;
+    scanf("%d",&noe);
+    int arr[noe],coz=0;
+    for(int count=0;count<noe;count++)
+    {
+    scanf("%d",arr[noe]);
+    if(arr[noe]==0) coz++;
+    }
+    printf("0:%d 1:%d",coz,noe-coz);
+}
